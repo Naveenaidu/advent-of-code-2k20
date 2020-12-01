@@ -1,11 +1,15 @@
-module Day01 (day01a, day01b) where
+module Day01  where
 
 import Data.List
 import Control.Monad
 
 -- Assume that we will get input in lines
 day01a :: String -> Int
-day01a str = getNumPair (convertToList str) 2020
+day01a str = day01a' (convertToList str)
+
+-- Use this function for testing
+day01a' :: [Int] -> Int
+day01a' list = getNumPair list 2020
 
 -- Convert and sort the list in ascending order
 convertToList :: String -> [Int]
@@ -27,7 +31,11 @@ getFirstNum (x:xs) highNum sum
 -- The below appraoch is an attempt to use those.
 
 day01b :: String -> Int
-day01b str = getTripletsProduct (convertToList str) 2020
+day01b str = day01b' (convertToList str)
+
+-- Use this function for testing
+day01b' :: [Int] -> Int
+day01b' list =  getTripletsProduct list 2020
 
 checkTripletsSum :: Int -> Int -> Int -> Int -> Int
 checkTripletsSum sum a b c 
