@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 18547af7c8582e098c609bb5860f3a7386fda38a6042181420f5e93ddb205473
+-- hash: 761853f6ebbaa3c912d006282017540d13ee6d2cbc72116869e4d684a83de917
 
 name:           advent-of-code-2k20
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Day01
       Lib
   other-modules:
       Paths_advent_of_code_2k20
@@ -34,6 +35,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , text
   default-language: Haskell2010
 
 executable advent-of-code-2k20-exe
@@ -46,6 +48,7 @@ executable advent-of-code-2k20-exe
   build-depends:
       advent-of-code-2k20
     , base >=4.7 && <5
+    , text
   default-language: Haskell2010
 
 test-suite advent-of-code-2k20-test
@@ -59,4 +62,5 @@ test-suite advent-of-code-2k20-test
   build-depends:
       advent-of-code-2k20
     , base >=4.7 && <5
+    , text
   default-language: Haskell2010
