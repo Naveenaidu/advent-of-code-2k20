@@ -10,9 +10,6 @@ data PswdPolicy
   , ppWord  :: String
   } deriving (Show, Eq)
 
--- day02a :: String -> [String]
--- day02a str = lines str
-
 day02a :: String -> Int
 day02a str = 
   case parse parseInput "" str of
