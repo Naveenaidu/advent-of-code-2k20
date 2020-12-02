@@ -39,7 +39,7 @@ day01b' list =  getTripletsProduct list 2020
 
 checkTripletsSum :: Int -> Int -> Int -> Int -> Int
 checkTripletsSum sum a b c 
- | a + b + c == 2020 = a * b * c
+ | a + b + c == sum = a * b * c
  | otherwise = -1
 
 -- Note: The implementation of liftM3 for list is from left to right
