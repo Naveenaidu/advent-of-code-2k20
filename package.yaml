@@ -23,6 +23,11 @@ dependencies:
 - base >= 4.7 && < 5
 - text
 - parsec
+- split
+- list-extras
+- lists
+- mono-traversable 
+- containers
 
 library:
   source-dirs: src
