@@ -4,9 +4,7 @@ import Data.List
 import Data.List.Split
 import Data.Lists
 import Data.Char
-import qualified Data.Map as Map
-import Control.Monad.IO.Class
- 
+
 day04a :: String -> Int
 day04a str = countValidPassport (passportBlocks str)
 
